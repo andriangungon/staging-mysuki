@@ -112,4 +112,7 @@ nav {
     .caption {
         font-size: 15px;
     }
+    .icons .huawei {
+      padding-left: 5px;
+    }
 }
