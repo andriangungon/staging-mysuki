@@ -1,9 +1,9 @@
 body {
     margin: auto;
     width: 100%;
-    font-family: 'Raleway';
+    font-family: "Raleway";
     color: #333333;
-    background-image: url("../images/hero-desktop.png");
+    background-image: url("../img/hero-desktop.png");
     background-repeat: no-repeat;
     background-position-x: right;
     background-position-y: 0;
@@ -30,6 +30,7 @@ nav {
     flex-direction: row;
     list-style-type: none;
     padding: 0;
+    margin-bottom: 0;
 }
 
 .nav li,
@@ -41,24 +42,21 @@ nav {
 .nav li a,
 .download li a {
     font-size: 12px;
-    color: #EE2F3C;
+    color: #ee2f3c;
     text-decoration: none;
 }
 
 .download li .active {
-    color: #FFFFFF;
+    color: #ffffff;
     text-decoration: none;
-    background: linear-gradient(90deg, #FF4B4B 32.78%, #FF5B82 116.67%);
+    background: linear-gradient(90deg, #ff4b4b 32.78%, #ff5b82 116.67%);
     border-radius: 100px;
     padding: 8px 15px;
 }
 
 .hero {
-    margin: 84px 0 33px 77px;
-}
-
-.hero-title {
-    width: 45.85%
+    min-height: 568px;
+    padding-top: 40px;
 }
 
 .title {
@@ -80,53 +78,30 @@ nav {
 
 .icons img {
     margin-right: 10px;
+    margin-bottom: 10px;
+}
+.row {
+  padding: 32px;
 }
 
 .mobile {
     display: none;
 }
 
-
 /* mobile view */
-
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 1200px) {
     body {
         flex-direction: column;
         background-image: none;
     }
-    .header {
-        justify-content: space-between;
-    }
     .nav {
         display: none;
     }
-    .icons {
-        flex-wrap: wrap;
-    }
-    .icons img {
-        margin-bottom: 10px;
-    }
-    .icons .ios {
-        width: 115px;
-        height: 38px;
-    }
-    .icons .android {
-        width: 138px;
-        height: 38px;
-    }
-    .icons .huawei {
-        width: 135px;
-        height: 37px;
+    .hero {
+      min-height: 268px;
     }
     .mobile {
-        display: flex;
-        justify-content: flex-start;
-    }
-    .hero {
-        margin: 30px;
-    }
-    .hero-title {
-        width: 100%;
+      display: block;
     }
     .title {
         font-size: 40px;
@@ -137,65 +112,4 @@ nav {
     .caption {
         font-size: 15px;
     }
-    .footer {
-        margin: 30px 30px 0 30px;
-    }
 }
-
-
-/* @media only screen and (min-device-width: 415px) and (max-device-width: 1023px) {
-    .hero,
-    .footer {
-        margin-left: 42px;
-    }
-    .hero-title {
-        width: 582px;
-    }
-    .subtitle {
-        width: 318px;
-    }
-    .caption {
-        width: 322px;
-    }
-    .icons {
-        width: 340px;
-    }
-    .icons img {
-        margin-bottom: 10px;
-    }
-} */
-
-
-/* @media only screen and (max-device-width: 1024px) {
-    .hero,
-    .footer {
-        margin-left: 42px;
-    } */
-
-
-/* .hero-title {
-        width: 582px;
-    } */
-
-
-/* .subtitle {
-        width: 318px;
-    } */
-
-
-/* .caption {
-        width: 322px;
-    } */
-
-
-/* .icons {
-        width: 340px;
-    } */
-
-
-/* .icons img {
-        margin-bottom: 10px;
-    } */
-
-
-/* } */
