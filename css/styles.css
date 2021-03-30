@@ -89,7 +89,7 @@ nav {
 
 /* mobile view */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1080px) {
     body {
         flex-direction: column;
         background-image: none;
