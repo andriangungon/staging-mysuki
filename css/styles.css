@@ -56,7 +56,8 @@ nav {
 
 .hero {
     min-height: 568px;
-    padding-top: 40px;
+    padding-top: 2%;
+    padding-left: 4%;
 }
 
 .title {
@@ -80,15 +81,18 @@ nav {
     margin-right: 10px;
     margin-bottom: 10px;
 }
+
 .row {
-  padding: 32px;
+    padding: 32px;
 }
 
 .mobile {
     display: none;
 }
 
+
 /* mobile view */
+
 @media only screen and (max-width: 1200px) {
     body {
         flex-direction: column;
@@ -98,10 +102,11 @@ nav {
         display: none;
     }
     .hero {
-      min-height: 268px;
+        min-height: 268px;
+        padding-left: 2%;
     }
     .mobile {
-      display: block;
+        display: block;
     }
     .title {
         font-size: 40px;
@@ -113,6 +118,6 @@ nav {
         font-size: 15px;
     }
     .icons .huawei {
-      padding-left: 5px;
+        padding-left: 5px;
     }
 }
